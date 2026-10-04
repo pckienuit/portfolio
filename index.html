@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Phan Chi Kien is a Computer Engineering student at UIT building AI, embedded, software, UX, and QA work that holds up in production." />
+    <meta name="theme-color" content="#0d2a4d" />
+    <title>Phan Chi Kien | Role-focused portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-role="ai">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Phan Chi Kien home">
+        <span class="brand-mark">PK</span>
+        <span class="brand-copy">
+          <strong>Phan Chi Kien</strong>
+          <small>Computer Engineering / UIT</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-mark" aria-hidden="true"></span><span id="availability">Open to AI development internships</span></p>
+          <h1 id="hero-title">I build AI systems that hold up outside the notebook.</h1>
+          <p class="hero-intro" id="hero-intro">Computer Engineering student focused on deep learning, edge inference, dataset pipelines, and reliable offline systems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/resumes/Phan-Chi-Kien-AI-Resume.pdf" id="view-resume" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="assets/resumes/Phan-Chi-Kien-AI-Resume.pdf" id="download-resume" download>Download resume <span aria-hidden="true">↓</span></a>
+          </div>
+          <nav class="hero-links" aria-label="External links">
+            <a href="https://github.com/pckienuit" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.behance.net/kienphan13" target="_blank" rel="noreferrer">Behance <span aria-hidden="true">↗</span></a>
+            <a href="mailto:phanchikien@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          </nav>
+        </div>
+
+        <aside class="role-panel reveal" aria-labelledby="role-heading">
+          <div class="panel-topline">
+            <span>Role lens</span>
+            <span id="role-code">01 / 05</span>
+          </div>
+          <h2 id="role-heading">What should this portfolio prove?</h2>
+          <p class="role-help">Pull the lever. Project order, language, colour, and resume change with it.</p>
+          <div class="lever" id="lever">
+            <div class="lever-track" id="lever-track">
+              <input class="lever-input" id="role-lever" type="range" min="0" max="4" step="1" value="0" aria-label="Portfolio role" aria-valuetext="AI Development" />
+              <span class="lever-knob" aria-hidden="true"><span class="lever-grip"></span></span>
+            </div>
+            <div class="lever-labels" id="lever-labels" aria-hidden="true"></div>
+          </div>
+          <p class="lever-readout"><span>Selected</span><strong id="lever-readout">AI Development</strong></p>
+        </aside>
+      </section>
+
+      <section class="signal-strip" aria-label="Current role signals">
+        <div class="shell signal-grid">
+          <div class="signal-item reveal"><span class="signal-label">Current lens</span><strong id="signal-role">AI Development</strong></div>
+          <div class="signal-item reveal"><span class="signal-label">Education</span><strong>Computer Engineering</strong><small>UIT, 2023-2027 expected</small></div>
+          <div class="signal-item reveal"><span class="signal-label">Proof point</span><strong id="signal-proof">15.86 ms</strong><small id="signal-proof-label">edge inference latency</small></div>
+          <div class="signal-item reveal"><span class="signal-label">Base</span><strong>Ho Chi Minh City</strong><small>Vietnam</small></div>
+        </div>
+      </section>
+
+      <section class="work-section shell" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Systems with a measurable edge.</h2>
+          <p id="work-intro">A small set of projects showing how I move from data and models to usable, testable systems.</p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+        <div class="index-block reveal">
+          <div class="index-head">
+            <h3>Drawing index</h3>
+            <p>More <span class="role-lens-name">AI Development</span> work, with the evidence behind each line.</p>
+          </div>
+          <ol class="project-index" id="project-index"></ol>
+        </div>
+      </section>
+
+      <section class="toolkit-section shell" id="toolkit">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Toolkit</p>
+          <h2>What I reach for.</h2>
+          <p>Tools I have shipped with on the projects above for <span class="role-lens-name">AI Development</span>, not a list of tutorials.</p>
+        </div>
+        <div class="toolkit-grid" id="toolkit-grid"></div>
+      </section>
+
+      <section class="approach-section shell" id="approach">
+        <div class="approach-lead reveal">
+          <p class="eyebrow">How I work</p>
+          <h2 id="approach-title">Make complexity legible.</h2>
+          <p id="approach-intro">I prefer clear constraints, observable behavior, and a working slice before abstraction.</p>
+        </div>
+        <div class="approach-list" id="approach-list"></div>
+      </section>
+
+      <section class="timeline-section shell" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2>Revision history.</h2>
+          <p>Milestones across every lens. The ones that matter for <span class="role-lens-name">AI Development</span> are drawn in full.</p>
+        </div>
+        <ol class="timeline-list" id="timeline-list"></ol>
+      </section>
+
+      <section class="about-section shell" id="about">
+        <div class="about-card reveal">
+          <div class="about-index">01</div>
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Technical enough to ship. Curious enough to ask why.</h2>
+            <p>Currently studying Computer Engineering at the University of Information Technology, VNU-HCM. I work across AI, embedded software, product design, and testing because useful systems sit between disciplines.</p>
+          </div>
+        </div>
+        <div class="about-notes reveal">
+          <div><span>GPA</span><strong>7.7 / 10</strong></div>
+          <div><span>Hackathons</span><strong>Top 36 + 3rd place</strong></div>
+          <div><span>Club role</span><strong>Design and Media Lead</strong></div>
+        </div>
+      </section>
+
+      <section class="contact-section shell" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Have a role that needs both systems thinking and follow-through?</h2>
+          <a class="button button-primary" href="mailto:phanchikien@gmail.com?subject=Portfolio%20conversation">Email Phan Chi Kien <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-aside reveal">
+          <p>Phan Chi Kien</p>
+          <a href="mailto:phanchikien@gmail.com">phanchikien@gmail.com</a>
+          <a href="tel:+84919162205">+84 919 162 205</a>
+          <span>Thu Duc, Ho Chi Minh City</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <span>© 2026 Phan Chi Kien</span>
+      <span>Built as a role-aware portfolio</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="art.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
