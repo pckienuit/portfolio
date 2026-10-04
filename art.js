@@ -205,5 +205,16 @@
     dim(110, 290, 214, "FLUTTER TEST · INTEGRATION_TEST")
   ].join(""));
 
+  art.webdesign = svg([
+    box(24, 30, 232, 160, "s", 4), line(24, 52, 256, 52), circle(36, 41, 3, "o"), circle(48, 41, 3, "o"), circle(60, 41, 3, "o"),
+    box(40, 68, 96, 12, "a"), line(40, 92, 180, 92, "f"), line(40, 104, 150, 104, "f"),
+    box(40, 122, 64, 52, "s", 2), box(116, 122, 64, 52, "s", 2), box(192, 122, 48, 52, "f", 2),
+    box(290, 48, 86, 142, "s", 10), line(322, 58, 344, 58), box(302, 76, 62, 10, "a"), line(302, 98, 356, 98, "f"), line(302, 110, 340, 110, "f"),
+    box(302, 126, 62, 40, "s", 2),
+    both(258, 118, 288, 118),
+    dim(24, 256, 212, "DOCUMENTED BREAKPOINTS"),
+    text(333, 212, "2 WEEKS", "ta", "middle")
+  ].join(""));
+
   window.projectArt = art;
 })();

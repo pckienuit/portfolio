@@ -123,7 +123,7 @@ const roles = {
     proof: "50+",
     proofLabel: "reusable Figma components",
     workTitle: "Design that survives handoff.",
-    workIntro: "Product design from dense IoT telemetry to guided mobile learning and two-sided marketplaces — researched, specified, and prototyped.",
+    workIntro: "Product design from dense IoT telemetry to guided mobile learning and client web work — mapped, systemised, and handed off.",
     approachTitle: "Design the behavior, not decoration.",
     approachIntro: "I map the task first, then build the smallest visual system that helps people complete it with confidence.",
     resume: "assets/resumes/Phan-Chi-Kien-UX-Resume.pdf",
@@ -141,14 +141,13 @@ const roles = {
     projects: [
       { id: "ssor", type: "Enterprise UX / IoT", title: "SSor AI Admin Dashboard", description: "A monitoring dashboard that turns device telemetry into fast system-health diagnosis, with role-based navigation and reusable states for three admin roles.", facts: [["50+", "reusable components"], ["3", "admin roles"]], tags: ["Figma", "Design System", "IoT", "Handoff"], metric: "50+ reusable components", link: "https://www.behance.net/gallery/251701789/UXUI-SSor-AI-Admin-Dashboard", linkLabel: "Behance case study" },
       { id: "learn2aid", type: "Mobile UX / Hackathon", title: "Learn2Aid", description: "10+ mobile screens for first-aid learning, quiz, checklist, and result flows. The team placed Top 36 nationwide in Google Hackathon Vietnam 2025.", tags: ["Figma", "User Flow", "Prototype", "Accessibility"], metric: "Top 36 / 100 nationwide", link: "https://www.behance.net/gallery/251703697/UXUI-Learn2Aid-Google-Hackathon-VietNam-2025", linkLabel: "Behance case study" },
-      { id: "maydong", image: "assets/projects/may-dong-desktop.webp", type: "Product Discovery", title: "Máy Đồng — Machinery Co-op", description: "Discovery package for a farm-machinery cooperative: market and policy research, user flows, a linted design system, and a clickable desktop/mobile prototype built around dispatching machines with qualified operators.", tags: ["Research", "User Flows", "Design Tokens", "Prototype"], metric: "20-sheet functional spec" },
-      { id: "vuoncohen", image: "assets/projects/vuon-co-hen-mobile.webp", fit: "contain", type: "Marketplace UX", title: "Vườn Có Hẹn", description: "A garden-tool rental and services marketplace for an HCMC pilot: research and strategy, flows for rentals, quotes and disputes, a token-based design system, and a clickable responsive prototype.", tags: ["Research", "Service Design", "Design System", "Prototype"], metric: "46 functional requirements" }
+      { id: "zola", type: "Developer-aware UX", title: "Zola Chat Interface", description: "Designed and implemented 20+ Material Design components and navigation flows across authentication, messaging, profiles, media, and voice/video calls — then tested the experience against the real Android build.", tags: ["Android", "Material Design", "Java", "User Testing"], metric: "20+ Android components", link: `${GH}/Nhom14_ZolaChat`, demo: "https://youtu.be/M8V_0-b_fXk" },
+      { id: "webdesign", type: "Freelance / Web", title: "Client Portfolio Website", description: "A responsive portfolio designed for a client in two weeks: goals turned into information architecture, visual hierarchy, and mobile-first layouts, with breakpoints, transitions, and hover states documented for implementation.", tags: ["Figma", "Responsive", "Client Work", "Handoff"], metric: "Delivered in 2 weeks", link: "https://www.behance.net/gallery/251702571/UXUI-Personal-Portfolio-Website", linkLabel: "Behance case study" }
     ],
     more: [
-      { title: "Zola Chat interface", what: "20+ Material Design components across chat, auth, profile, media, and call flows, checked against the real Android build.", stack: "Android · Material Design", evidence: "20+ components", link: "https://youtu.be/M8V_0-b_fXk", linkLabel: "Video demo" },
-      { title: "Client portfolio website", what: "Freelance responsive portfolio, from information architecture to documented breakpoints, transitions, and hover states.", stack: "Figma", evidence: "Delivered in 2 weeks", link: "https://www.behance.net/gallery/251702571/UXUI-Personal-Portfolio-Website", linkLabel: "Behance" },
       { title: "Duck Race", what: "Character sheet and mockups designed before code for a canvas race game, then built and shipped.", stack: "HTML · Canvas 2D", evidence: "Live on Vercel", link: "https://duck-race-nextgen.vercel.app", linkLabel: "Live demo" },
-      { title: "Visual design portfolio", what: "Retouching, layout, and typography work for club and personal projects.", stack: "Photoshop · Illustrator · Figma", evidence: "Ongoing", link: "https://www.behance.net/kienphan13", linkLabel: "Behance" }
+      { title: "Visual design portfolio", what: "Retouching, layout, and typography work for club and personal projects.", stack: "Photoshop · Illustrator · Figma", evidence: "Ongoing", link: "https://www.behance.net/kienphan13", linkLabel: "Behance" },
+      { title: "RainWindow", what: "Rider-facing flow for rain-avoidance routing in Ho Chi Minh City, including a fail-safe shelter mode for when the forecast is wrong.", stack: "GeoAI · Mobile UX", evidence: "MLAI / Tasco Map Challenge 2026 · team of 4" }
     ]
   },
   qa: {
@@ -215,7 +214,6 @@ const roleKeys = Object.keys(roles);
 document.documentElement.classList.add("js");
 
 function projectMedia(project) {
-  if (project.image) return `<img class="fit-${project.fit ?? "cover"}" src="${project.image}" alt="${project.title} prototype screenshot" loading="lazy" />`;
   return window.projectArt?.[project.art ?? project.id]?.(`${project.title} schematic`) ?? "";
 }
 
