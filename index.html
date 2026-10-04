@@ -14,6 +14,29 @@
   <body data-role="ai">
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Choose how you know Phan Chi Kien" hidden>
+      <div class="intro-sheet">
+        <div class="intro-boot" id="intro-boot" aria-hidden="true">
+          <svg class="intro-mark" viewBox="0 0 120 120">
+            <rect class="intro-frame" x="10" y="10" width="100" height="100" />
+            <path class="intro-cross" d="M60 0v16M60 104v16M0 60h16M104 60h16" />
+            <text class="intro-initials" x="60" y="72" text-anchor="middle">PK</text>
+          </svg>
+          <p class="intro-type"><span id="intro-type"></span><span class="intro-caret"></span></p>
+        </div>
+        <div class="intro-select" id="intro-select" hidden>
+          <p class="eyebrow">Sheet 00 / Title block</p>
+          <h1 id="intro-question">Which version of me are you here for?</h1>
+          <p class="intro-help">Pick a lens. Every sheet in this set is redrawn for it: projects, palette, resume.</p>
+          <div class="intro-cards" id="intro-cards"></div>
+          <p class="intro-foot">
+            <span class="intro-keys" aria-hidden="true">Keys 1–5 · ← → · Enter</span>
+            <button class="intro-skip" type="button" id="intro-skip">Skip, show the default</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Phan Chi Kien home">
         <span class="brand-mark">PK</span>
@@ -35,7 +58,7 @@
       <section class="hero shell" id="top">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span class="status-mark" aria-hidden="true"></span><span id="availability">Open to AI development internships</span></p>
-          <h1 id="hero-title">I build AI systems that hold up outside the notebook.</h1>
+          <h1 id="hero-title" tabindex="-1">I build AI systems that hold up outside the notebook.</h1>
           <p class="hero-intro" id="hero-intro">Computer Engineering student focused on deep learning, edge inference, dataset pipelines, and reliable offline systems.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="assets/resumes/Phan-Chi-Kien-AI-Resume.pdf" id="view-resume" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
@@ -151,11 +174,12 @@
 
     <footer class="site-footer shell">
       <span>© 2026 Phan Chi Kien</span>
-      <span>Built as a role-aware portfolio</span>
+      <span>Built as a role-aware portfolio · <button class="link-button" type="button" id="replay-intro">Replay intro</button></span>
       <a href="#top">Back to top ↑</a>
     </footer>
 
     <script src="art.js"></script>
     <script src="app.js"></script>
+    <script src="intro.js"></script>
   </body>
 </html>
