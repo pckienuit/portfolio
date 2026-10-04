@@ -228,7 +228,7 @@ function projectLinks(project) {
 function renderProjects(role) {
   $("#project-grid").innerHTML = role.projects.map((project, index) => `
     <article class="project-card${index === 0 ? " is-featured" : ""}" data-project="${project.id}" style="--i:${index}">
-      <div class="project-media"><span class="media-tag">FIG. ${pad(index + 1)}</span>${projectMedia(project)}</div>
+      <div class="project-media drawing"><span class="media-tag">FIG. ${pad(index + 1)}</span>${projectMedia(project)}</div>
       <div class="project-body">
         <div class="project-kicker"><span>${pad(index + 1)} / ${project.type}</span><span>${project.metric}</span></div>
         <h3>${project.title}</h3>

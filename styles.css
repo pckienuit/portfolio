@@ -9,35 +9,35 @@
   --ease-detent: cubic-bezier(.34, 1.56, .64, 1);
 }
 
-body {
+body, [data-role="ai"] {
   --paper: #0d2a4d;
   --paper-2: #10335c;
   --ink: #eaf3ff;
   --accent: #66d4ff;
   --on-accent: #06203a;
 }
-body[data-role="embedded"] {
+[data-role="embedded"] {
   --paper: #0b2b22;
   --paper-2: #0f372c;
   --ink: #ebf7f0;
   --accent: #f4c24f;
   --on-accent: #2a1d00;
 }
-body[data-role="software"] {
+[data-role="software"] {
   --paper: #191c22;
   --paper-2: #20242c;
   --ink: #eef1f4;
   --accent: #c3ee5c;
   --on-accent: #1c2600;
 }
-body[data-role="ux"] {
+[data-role="ux"] {
   --paper: #251a42;
   --paper-2: #2e2152;
   --ink: #f4efff;
   --accent: #ff93a8;
   --on-accent: #3a0c19;
 }
-body[data-role="qa"] {
+[data-role="qa"] {
   --paper: #2b1715;
   --paper-2: #371e1b;
   --ink: #fff1ec;
@@ -45,7 +45,7 @@ body[data-role="qa"] {
   --on-accent: #3a0d02;
 }
 
-body {
+body, [data-role] {
   --ink-dim: color-mix(in srgb, var(--ink) 68%, transparent);
   --ink-faint: color-mix(in srgb, var(--ink) 40%, transparent);
   --rule: color-mix(in srgb, var(--ink) 22%, transparent);
@@ -322,19 +322,19 @@ p { margin: 0; }
   color: var(--ink-faint); font: 500 10px var(--mono); letter-spacing: .14em;
 }
 
-/* Drawing strokes, coloured by the active role. */
-.project-media .s, .project-media .a, .project-media .f { fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.project-media .s { stroke: var(--ink); stroke-width: 1.3; opacity: .85; }
-.project-media .a { stroke: var(--accent); stroke-width: 1.6; }
-.project-media .f { stroke: var(--ink-faint); stroke-width: 1; stroke-dasharray: 3 4; }
-.project-media .o { fill: none; stroke: var(--ink-faint); stroke-width: 1; }
-.project-media .fill { fill: var(--accent); stroke: none; }
-.project-media .mask { fill: var(--paper-2); }
-.project-media text { font-family: var(--mono); font-weight: 500; letter-spacing: .06em; }
-.project-media .t { fill: var(--ink-dim); font-size: 10px; }
-.project-media .ta { fill: var(--accent); font-size: 10px; }
-.project-media .tl { fill: var(--ink); font-size: 18px; font-weight: 600; }
-.project-media .tla { fill: var(--accent); font-size: 18px; font-weight: 600; }
+/* Drawing strokes, coloured by the nearest data-role palette. */
+.drawing .s, .drawing .a, .drawing .f { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.drawing .s { stroke: var(--ink); stroke-width: 1.3; opacity: .85; }
+.drawing .a { stroke: var(--accent); stroke-width: 1.6; }
+.drawing .f { stroke: var(--ink-faint); stroke-width: 1; stroke-dasharray: 3 4; }
+.drawing .o { fill: none; stroke: var(--ink-faint); stroke-width: 1; }
+.drawing .fill { fill: var(--accent); stroke: none; }
+.drawing .mask { fill: var(--paper-2); }
+.drawing text { font-family: var(--mono); font-weight: 500; letter-spacing: .06em; }
+.drawing .t { fill: var(--ink-dim); font-size: 10px; }
+.drawing .ta { fill: var(--accent); font-size: 10px; }
+.drawing .tl { fill: var(--ink); font-size: 18px; font-weight: 600; }
+.drawing .tla { fill: var(--accent); font-size: 18px; font-weight: 600; }
 
 .project-body { display: flex; flex-direction: column; gap: 12px; flex: 1; padding: 22px 22px 24px; }
 .project-kicker {
