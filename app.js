@@ -5,6 +5,8 @@ const roles = {
   ai: {
     label: "AI Development",
     short: "AI",
+    persona: "The AI engineer",
+    tagline: "Models that run where the data is — a laptop GPU or a RISC-V camera.",
     availability: "Open to AI development internships",
     title: "I build AI systems that hold up outside the notebook.",
     intro: "Computer Engineering student focused on deep learning, edge inference, dataset pipelines, and reliable offline systems.",
@@ -42,6 +44,8 @@ const roles = {
   embedded: {
     label: "Embedded Software",
     short: "Embedded",
+    persona: "The firmware developer",
+    tagline: "C on bare metal, Linux on the edge, and a logic analyzer when it lies.",
     availability: "Open to embedded software internships",
     title: "I turn timing, memory, and hardware limits into working software.",
     intro: "Computer Engineering student building C/C++ firmware, Linux edge systems, drivers, and low-level verification paths.",
@@ -79,6 +83,8 @@ const roles = {
   software: {
     label: "Software & Web",
     short: "Software",
+    persona: "The software builder",
+    tagline: "Apps with releases, realtime backends, and the boring parts done.",
     availability: "Open to software and web development internships",
     title: "I ship software people can install, open, and rely on.",
     intro: "Computer Engineering student building full-stack web, mobile, and desktop apps — from API design and realtime sync to releases and tests.",
@@ -117,6 +123,8 @@ const roles = {
   ux: {
     label: "UX / Product Design",
     short: "UX",
+    persona: "The product designer",
+    tagline: "Flows, systems, and prototypes that survive handoff.",
     availability: "Open to UX and product design internships",
     title: "I make complex product behavior easier to understand and use.",
     intro: "Computer Engineering student working across user flows, interface systems, prototypes, accessibility, and front-end constraints.",
@@ -153,6 +161,8 @@ const roles = {
   qa: {
     label: "Automation Testing",
     short: "QA",
+    persona: "The test engineer",
+    tagline: "Suites, pipelines, and evidence that turns a failure into a fix.",
     availability: "Open to QA automation internships",
     title: "I find the edge case before users have to.",
     intro: "Computer Engineering student focused on API validation, automated regression coverage, integration testing, and defect lifecycles.",
@@ -359,6 +369,6 @@ if ("IntersectionObserver" in window) {
   $$(".reveal").forEach(reveal);
 }
 
-window.portfolioRoles = roleKeys;
+window.portfolio = { roles, roleKeys, setRole };
 // Self-check: each role needs a resume, a featured project plus three more, an index, and a toolkit.
 console.assert(roleKeys.every((key) => roles[key].resume && roles[key].projects.length === 4 && roles[key].more.length && roles[key].toolkit.length), "Portfolio role data incomplete");

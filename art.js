@@ -216,5 +216,19 @@
     text(333, 212, "2 WEEKS", "ta", "middle")
   ].join(""));
 
+  // Role glyphs for the intro cards (48 × 48).
+  const glyph = (body) => `<svg viewBox="0 0 48 48" aria-hidden="true">${body}</svg>`;
+  window.roleGlyphs = {
+    ai: glyph([circle(10, 14, 4), circle(10, 34, 4), circle(24, 24, 4, "a"), circle(38, 12, 4), circle(38, 36, 4),
+      line(13, 16, 21, 22), line(13, 32, 21, 26), line(27, 22, 35, 14), line(27, 26, 35, 34)].join("")),
+    embedded: glyph([box(13, 13, 22, 22, "s", 2), box(20, 20, 8, 8, "a", 1),
+      ...[17, 24, 31].flatMap((v) => [line(v, 7, v, 13), line(v, 35, v, 41), line(7, v, 13, v), line(35, v, 41, v)])].join("")),
+    software: glyph([box(7, 10, 34, 28, "s", 3), line(7, 17, 41, 17), circle(12, 13.5, 1.2, "fill"), circle(16.5, 13.5, 1.2, "fill"),
+      poly("18,23 13,28 18,33", "a"), poly("30,23 35,28 30,33", "a"), line(26, 22, 22, 34, "a")].join("")),
+    ux: glyph([box(8, 8, 26, 26, "f", 2), line(8, 16, 34, 16, "f"), box(14, 20, 14, 8, "a", 1),
+      poly("28,26 40,30 34,33 38,40 35,41 31,35 27,38 28,26", "s")].join("")),
+    qa: glyph([box(7, 11, 20, 20, "f", 2), box(15, 17, 26, 24, "s", 2), poly("21,29 26,34 36,23", "a")].join(""))
+  };
+
   window.projectArt = art;
 })();
