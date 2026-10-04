@@ -1,0 +1,108 @@
+\documentclass{resume}
+
+\usepackage[left=0.35in,top=0.2in,right=0.35in,bottom=0.5in]{geometry}
+\usepackage{setspace}
+\setstretch{0.84}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Tighten spacing drastically
+\makeatletter
+\def\@sectionskip{\vspace{1.5pt}}
+\def\@sectionlineskip{\vspace{1pt}}
+\makeatother
+
+\name{Phan Chi Kien}
+\address{+84 919 162 205 \\ Thu Duc, Ho Chi Minh City \\ Remote-ready}
+\address{\href{mailto:phanchikien@gmail.com}{phanchikien@gmail.com} \\ \href{https://github.com/pckienuit}{github.com/pckienuit} \\ \href{https://goldtrader-showcase.vercel.app}{goldtrader-showcase.vercel.app}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Objective}
+    \vspace{-2pt}
+    {Ambitious Computer Engineering student at UIT with strong foundations in OOP, databases, and software engineering. Shipped web and mobile solutions including full-stack Zalo Chat clone (Firebase, Node.js, Express) and university portal application (React Native, Expo). Seeking \textbf{Software / Web Developer internship or fresher} roles to apply these disciplines and collaborate in agile international teams.}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+    \vspace{-2pt}
+    {\bf University of Information Technology - VNU HCM (UIT)} \hfill {2023 -- 2027 (expected)}\\
+    {Bachelor of Computer Engineering} \hfill GPA: 7.69/10 | Third-year\\
+    \textit{Core courses}: OOP, Operating Systems, Database Management Systems, Data Structures \& Algorithms.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+    \vspace{-2pt}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+        Languages      & JavaScript, TypeScript, Python, Java, C/C++, Verilog HDL \\
+        Web/Mobile     & Node.js, Express, React Native, Expo, HTML5, CSS3, REST APIs \\
+        Databases      & Firebase Firestore, Realtime Database, SQLite, Supabase \\
+        DevOps/Tools   & Git/GitHub, Docker, Vercel, npm/pnpm \\
+        Core CS        & Object-Oriented Programming (OOP), Data Modelling, Agile/Scrum \\
+        English        & Professional proficiency (working and collaborating in English) \\
+    \end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE & PROJECTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+    \vspace{-2pt}
+
+    \item \textbf{Zola Chat - Native Android \& Node.js Messaging Application} \hfill {Dec 2025 -- Present}\\
+    {\small \textit{Java, Node.js, Express, Firebase, WebSockets (Socket.io), Helmet, CORS} \hfill | \href{https://github.com/pckienuit/DoAn_ZaloClone}{GitHub}}
+    \begin{itemize}
+        \itemsep -5pt {}
+        \item Built a full-stack real-time messaging application with a Java-based Android client and Node.js backend.
+        \item Designed Express API with rate-limiting, CORS validation, security configurations (Helmet), and compression.
+        \item Integrated WebSocket communication for instant message updates and synchronized chat lists.
+        \item Formulated database schemas using Firebase for scalable user state and authentication.
+    \end{itemize}
+
+    \item \textbf{UIT Portal App - Cross-platform Mobile Client} \hfill {Jan 2026 -- Present}\\
+    {\small \textit{TypeScript, React Native, Expo, REST APIs, Custom HTML Parser} \hfill | \href{https://github.com/pckienuit/uit-portal-app}{GitHub}}
+    \begin{itemize}
+        \itemsep -5pt {}
+        \item Developed a cross-platform mobile client for the university portal using React Native and Expo.
+        \item Designed a custom, regex-based lightweight HTML parser to extract structured academic data (exam schedules, tuition, grades, announcements) directly from server-rendered tables.
+        \item Built clean, scalable UI layout components matching the 8pt spacing grid system.
+        \item Implemented authentication handlers, token expiry checks, and offline data storage.
+    \end{itemize}
+
+    \item \textbf{GoldTrader Series - Quantitative Algorithmic System} \hfill {Jan 2026 -- Present}\\
+    {\small \textit{Python, Scikit-learn, LightGBM, MetaTrader 5, Supabase} \hfill | \href{https://goldtrader-showcase.vercel.app}{Showcase} | \href{https://github.com/pckienuit/GoldTrader2}{GitHub}}
+    \begin{itemize}
+        \itemsep -5pt {}
+        \item Created a complete ML trading engine for XAUUSD: data ingestion, regime detection, signal generation, and async Supabase reporting.
+        \item Executed \textbf{1,029 live demo trades} (Profit Factor \textbf{1.36}, Sharpe \textbf{1.2}, net PnL \textbf{+\$254} on \$2,000 capital).
+    \end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS & ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Achievements \& Activities}
+    \vspace{-2pt}
+    \begin{itemize}
+        \itemsep -5pt {}
+        \item \textbf{3rd Place} - Solana Pragmatic IT Hackathon 2025: Shipped a working product within a 48h sprint with a fully remote team, employing rapid feedback loops.
+        \item \textbf{Top 36/100 Teams} - Google Hackathon Vietnam 2025: Engineered an AI decision prototype under strict constraints.
+        \item \textbf{Active Member} - WebDev Studios Club (UIT): Conducted knowledge-sharing sessions and hosted technical events for student developers.
+    \end{itemize}
+\end{rSection}
+
+\end{document}

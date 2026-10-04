@@ -1,0 +1,77 @@
+\documentclass{resume}
+
+\usepackage[left=0.4in,top=0.3in,right=0.4in,bottom=0.3in]{geometry}
+\usepackage{setspace}
+\setstretch{0.92}
+\emergencystretch=2em
+
+\name{Phan Chi Kien}
+\address{+84 919 162 205 \\ Thu Duc, Ho Chi Minh City}
+\address{\href{mailto:phanchikien@gmail.com}{phanchikien@gmail.com} \\ \href{https://github.com/pckienuit}{github.com/pckienuit}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-3pt}
+{Final-year Computer Engineering student at UIT with hands-on experience in building full-stack applications (Java/Android, Python/FastAPI, Node.js), automated testing, API validation, and CI/CD pipelines. Proficient in Selenium, PyTest, Git, and defect tracking. Seeking \textbf{Automation Testing / QA internship} opportunities.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-3pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+{\bf Bachelor of Computer Engineering} \hfill GPA: 7.69/10
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-3pt}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
+        Automation Testing & Selenium WebDriver, Page Object Model, PyTest, JUnit/TestNG concepts, Postman \\
+        Programming & Java, Python, JavaScript/Node.js, Shell Scripting \\
+        Tools \& CI/CD & Git, GitHub Actions, Docker, Jira/GitHub Issues, Android Studio \\
+        Testing Concepts & Test Case Design, Functional \& Regression Testing, Defect Lifecycle, Load/Stress Testing \\
+        Backend \& DB & FastAPI, Express/Socket.IO, Firebase Firestore, SQLite, MySQL, Qdrant \\
+    \end{tabular}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \vspace{-0.6em}
+
+    \item \textbf{Zola Chat -- Native Android Messaging Application} \hfill 2024--2025\\
+    {\small \textit{Java, MVVM, Firebase, Node.js/Express, Socket.IO, Cloudinary, Stream WebRTC}} \hfill | \href{https://github.com/pckienuit}{GitHub}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item \textbf{Full-Stack Development:} Built a 100+ feature messaging app (text, media, stickers, polls, voice/video call, live location) with Java/Android client (MVVM + Repository), Node.js backend (REST API + Socket.IO), and Firebase/Cloudinary services.
+        \item \textbf{Testing \& Quality:} Designed and executed functional/regression test cases across 18 modules; validated WebSocket events, REST API endpoints, and Firebase auth flows using Postman; tracked 50+ defects through full lifecycle.
+        \item \textbf{Build \& Source Control:} Managed Gradle build flavors (local/production), Git branching, APK release builds; maintained test docs and deployment guides.
+    \end{itemize}
+
+    \item \textbf{AIoT Flight Face Lookup -- Edge AI Kiosk System} \hfill 2025--2026\\
+    {\small \textit{Python, FastAPI, Qdrant, ONNX, MaixCAM (RISC-V), Docker, PyTest}} \hfill | \href{https://github.com/pckienuit/AIoT_DoAn}{GitHub}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item \textbf{System Architecture:} Designed a 3-tier offline kiosk (Web $\leftrightarrow$ FastAPI Server $\leftrightarrow$ MaixCAM Edge) for real-time passenger face lookup; synced 200 profiles in $<$500ms via tiered cache.
+        \item \textbf{API \& Integration Testing:} Wrote automated PyTest suites for REST API endpoints, vector search accuracy, crypto pipeline validation (AES-GCM + XTEA-CTR), and edge sync; stress tests verifying FAR = 0.22\% and 15.86ms latency.
+        \item \textbf{Edge Deployment \& Debugging:} Automated device deployment scripts (paramiko SSH), ran hardware stress tests on MaixCAM, debugged camera freeze/sync issues via log analysis.
+    \end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{ACHIEVEMENTS}
+    \vspace{-0.6em}
+
+    \item \textbf{3rd Place -- IT Hackathon Solana Pragmatic 2025}\\
+    {\small \textit{Web3, Product QA, System Testing, Teamwork}}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item Led QA and feature integration tests for a Web3 gaming prototype under a 48-hour deadline.
+    \end{itemize}
+
+    \item \textbf{Top 36/100 Teams Nationwide -- Google Hackathon Vietnam 2025}\\
+    {\small \textit{AI, System Thinking, Edge-case Analysis}}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item Conducted scenario testing and edge-case analysis for AI decision-support pipelines.
+    \end{itemize}
+\end{rSection}
+
+\end{document}

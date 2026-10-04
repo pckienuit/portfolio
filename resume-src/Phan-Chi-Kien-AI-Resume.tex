@@ -1,0 +1,116 @@
+\documentclass{resume}
+
+\usepackage[left=0.45in,top=1.0in,right=0.45in,bottom=0.2in]{geometry}
+\usepackage{setspace}
+\setstretch{1.0}
+\emergencystretch=2em
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\makeatletter
+\def\@sectionskip{\vspace{0pt}}
+\def\@sectionlineskip{\vspace{0pt}}
+\makeatother
+
+\name{Phan Chi Kien}
+\address{+84 919 162 205 \\ Thu Duc, Ho Chi Minh City}
+\address{\href{mailto:phanchikien@gmail.com}{phanchikien@gmail.com} \\ \href{https://github.com/pckienuit}{github.com/pckienuit}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-2pt}
+{Senior Computer Engineering student at UIT experienced in GenAI/LLM integration, AI output validation, API/proxy integration, vector search, and edge AI deployment. Seeking \textbf{AI Engineering / AI Development internship} opportunities.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-2pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+{\bf Bachelor of Computer Engineering} \hfill GPA: 7.69/10
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-2pt}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} >{\raggedright\arraybackslash}p{5.25in} @{} }
+        AI / GenAI       & Python, PyTorch, HuggingFace, PhoWhisper/Whisper, Gemini API, Ollama, prompt engineering \\
+        Backend / Data   & FastAPI, REST APIs, JSON, OpenAI-compatible proxy, Qdrant, SQLite/MySQL, Docker, Git \\
+        Validation       & pytest, API tests, edge-case analysis, AI output validation, stress/reliability checks \\
+        Edge / Systems   & ONNX, MaixCAM (RISC-V), FFmpeg, CUDA, Linux \\
+        Methodology      & Agile/Scrum, AI-assisted coding tools \\
+    \end{tabular}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \vspace{-0.6em}
+
+    \item \textbf{PhoWhisper Tool -- GenAI Audio Transcription Assistant} \hfill 2026\\
+    {\small \textit{Python, PyTorch, HuggingFace, Gemini API, Ollama, FFmpeg, CUDA, Tkinter}} \hfill | \href{https://github.com/pckienuit/phowhisper-tool}{GitHub}
+    \begin{itemize}
+        \itemsep 0pt {}
+        \item \textbf{GenAI Workflow:} Designed a Vietnamese/multilingual audio assistant for local files, YouTube, and Google Drive, combining PhoWhisper/Whisper ASR with LLM refinement/Q\&A to produce structured transcripts and study notes.
+        \item \textbf{LLM Integration \& Fallback:} Integrated Gemini SDK, OpenAI-compatible proxy, and local Ollama/Gemma pipeline with 3-attempt retries, proxy auto-start/health checks, cached availability checks, and shared GUI/CLI processing.
+        \item \textbf{Performance \& UX:} Optimized CUDA inference with \texttt{torch.inference\_mode}, \texttt{torch.compile}, in-memory audio chunks, vectorized noise reduction, and RTF progress metrics; documented $\sim$75\% faster startup, $\sim$50\% faster long-file processing, and $\sim$40\% lower peak RAM.
+    \end{itemize}
+
+    \item \textbf{AIoT Flight Face Lookup -- End-to-End AI Workflow System} \hfill 2026\\
+    {\small \textit{Python, FastAPI, Qdrant, ONNX, MaixCAM (RISC-V), Docker}} \hfill | \href{https://github.com/pckienuit/AIoT_DoAn}{GitHub}
+    \begin{itemize}
+        \itemsep 0pt {}
+        \item \textbf{System Architecture:} Designed a 3-tier offline kiosk system (Web $\leftrightarrow$ FastAPI Server $\leftrightarrow$ MaixCAM Edge) for real-time flight info lookup, syncing 200 passenger profiles in $<$ 500ms via a 3-level tiered cache.
+        \item \textbf{Model Training \& Edge AI:} Trained MobileNetV2-based Landmark (CelebA 200K, Wing+Focal Loss) and ArcFace (CASIA-WebFace 500K) models, followed by INT8 ONNX quantization on the MaixCAM TPU to achieve 15.86ms end-to-end latency.
+        \item \textbf{Reliability \& Security:} Secured offline data syncing with a dual-cipher pipeline (AES-GCM 256-bit + XTEA-CTR) and maintained a low False Acceptance Rate (FAR = 0.22\%).
+    \end{itemize}
+
+\end{rSection}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ACHIEVEMENTS}
+    \vspace{-2pt}
+    \itemsep -3pt {}
+    \textbf{3rd Place} - \textbf{IT Hackathon Solana Pragmatic 2025}\\
+    {\small \textit{Web3, Teamwork, Product Thinking, Rapid Prototyping}}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item \textbf{Contribution:} Built a Web3 gaming prototype that tokenised in-game assets as on-chain NFTs.
+        \item \textbf{Knowledge Applied:} Used blockchain ownership models, transaction-flow design, and rapid prototyping.
+        \item \textbf{Lessons Learned:} Balanced technical feasibility, product clarity, and delivery speed under a short deadline.
+    \end{itemize}
+    \textbf{Top 36/100 Teams Nationwide} - \textbf{Google Hackathon Vietnam 2025}\\
+    {\small \textit{AI, Problem Framing, Data Reasoning, System Thinking}}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item \textbf{Contribution:} Developed an AI-based decision-support concept for real-time guidance under uncertainty.
+        \item \textbf{Knowledge Applied:} Applied ML problem framing, data-driven reasoning, and system-level thinking.
+        \item \textbf{Lessons Learned:} Turned ambiguous user needs into testable system behaviour.
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULAR
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Curricular Activities}
+    \vspace{-2pt}
+    \itemsep -3pt {}
+    \textbf{Lead of Design and Media} - \textbf{WebDev Studios} Club (UIT)\\
+    {\small \textit{Team Leading, Communication, Collaboration, Content Planning}}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item \textbf{Contribution:} Coordinated information between club departments and translated internal plans into public media posts.
+        \item \textbf{Knowledge Applied:} Applied cross-team communication, content planning, visual brief preparation, and posting schedule management.
+        \item \textbf{Lessons Learned:} Learned to keep messages consistent across teams and deliver clear, timely communication to club members.
+    \end{itemize}
+    \textbf{Member} - \textbf{Google Developer Student} Club (UIT)\\
+    {\small \textit{Event Planning, Communication, Collaboration, Community Learning}}
+    \begin{itemize}
+        \itemsep -4pt {}
+        \item \textbf{Contribution:} Participated in and co-organised technology workshops and seminars.
+        \item \textbf{Knowledge Applied:} Applied event planning, public communication, and collaborative problem-solving.
+        \item \textbf{Lessons Learned:} Learned how developer communities accelerate self-learning and project execution.
+    \end{itemize}
+\end{rSection}
+
+\end{document}

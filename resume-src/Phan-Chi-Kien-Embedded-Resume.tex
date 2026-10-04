@@ -1,0 +1,80 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass{resume}
+
+\usepackage[left=0.42in,top=0.45in,right=0.42in,bottom=0.30in]{geometry}
+\usepackage{setspace}
+\setstretch{0.94}
+\emergencystretch=2em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\makeatletter
+\def\@sectionskip{\vspace{1pt}}
+\def\@sectionlineskip{\vspace{0pt}}
+\makeatother
+
+\name{Phan Chi Kien}
+\address{+84 919 162 205 \addressSep Thu Duc, Ho Chi Minh City}
+\address{\href{mailto:phanchikien@gmail.com}{phanchikien@gmail.com} \addressSep \href{https://github.com/pckienuit}{github.com/pckienuit}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-3pt}
+{Third-year Computer Engineering student experienced in C/C++ firmware, Linux-based edge systems, microcontrollers, and communication protocols. Seeking an \textbf{Embedded Software internship (C/C++/Linux)} to analyze requirements, design modules, integrate and test software, document results, and debug failures.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-3pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+{\bf Bachelor of Computer Engineering} \hfill GPA: 7.7/10 | 3rd Year
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-3pt}
+{\bf Programming:} C/C++, Python, Bash, Verilog HDL\\
+{\bf Embedded / OS:} Linux (Ubuntu/Debian), bare-metal firmware, FreeRTOS fundamentals, STM32F103, ESP32, Arduino, MaixCAM\\
+{\bf Peripherals / Protocols:} GPIO, ADC, DMA, Timer/PWM, interrupts, UART, SPI, I2C, WS2812B, HD44780\\
+{\bf Development / Test:} Git, GCC/GDB, CMake, Make, Docker, OpenOCD/JTAG, ModelSim, logic analyzer
+\end{rSection}
+
+\begin{rSection}{Projects}
+\vspace{-0.7em}
+
+\item \textbf{FFT Audio Spectrum Analyzer \& LED Matrix} \hfill 2025\\
+{\small \textit{C/C++, STM32F103C8T6 (ARM Cortex-M3), ADC, DMA, PWM, HD44780}} \hfill | \href{https://github.com/pckienuit/led}{GitHub}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item \textbf{Embedded C/C++:} Built a bare-metal audio analyzer that processed 10~kHz ADC samples into 10 frequency bands from 200--4,000~Hz by implementing a 128-point Q15 fixed-point Cooley--Tukey FFT on STM32F103.
+    \item \textbf{Driver Integration \& Debugging:} Controlled 60 WS2812B LEDs at 800~kHz and updated a custom LCD through timer/PWM, DMA, GPIO, and state-machine modules. Diagnosed power, keypad, and timing faults with iterative tests and a logic analyzer.
+\end{itemize}
+
+\item \textbf{Edge-based Facial Recognition Flight Information System} \hfill 2026\\
+{\small \textit{Python, Linux, MaixCAM (RISC-V SoC), FastAPI, ONNX, Docker}} \hfill | \href{https://github.com/pckienuit/AIoT_DoAn}{GitHub}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item \textbf{Linux Embedded Integration:} Designed a 3-tier offline kiosk linking a web client, FastAPI server, and MaixCAM Linux edge node. Synchronized 200 passenger profiles in under 500~ms through a 3-level cache.
+    \item \textbf{Testing \& Reliability:} Implemented and tested face matching, cache persistence, fallback behavior, and encrypted data flows on a RISC-V SoC. Achieved 15.86~ms inference latency and 0.22\% FAR while documenting failure modes.
+\end{itemize}
+
+\item \textbf{Hardware SHA-256 Cryptographic Core} \hfill 2026\\
+{\small \textit{Verilog HDL, ModelSim, Quartus Prime, FSM, Digital Logic}} \hfill | \href{https://github.com/pckienuit/SHA-256}{GitHub}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item \textbf{Low-level Design \& Verification:} Designed an SHA-256 core with an FSM and 16-word message schedule. Constrained its clock to 50~MHz and verified component and top-level behavior against known vectors in ModelSim.
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Achievements \& Leadership}
+\vspace{-3pt}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item \textbf{3rd Place, IT Hackathon Solana Pragmatic 2025:} Built a working prototype under a short deadline.
+    \item \textbf{Top 36/100 Teams, Google Hackathon Vietnam 2025:} Converted ambiguous requirements into testable behavior.
+    \item \textbf{Lead of Design and Media, WebDev Studios (UIT):} Coordinated cross-team plans and documented public communications for club activities.
+\end{itemize}
+\end{rSection}
+
+\end{document}
